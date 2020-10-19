@@ -1,0 +1,32 @@
+import {{pascalCase name}}Service from './index';
+
+jest.mock('common/config', () => require('common/_testing/config'));
+jest.mock('common/core/connector', () =>
+  require('common/_testing/core/connector')
+);
+jest.mock('common/core/notificator', () =>
+  require('common/_testing/core/notificator')
+);
+
+describe('[Service][{{pascalCase name}}] {{pascalCase name}}Service', () => {
+  let {{camelCase name}}Service: {{pascalCase name}}Service;
+
+  beforeEach(() => {
+    {{camelCase name}}Service = new {{pascalCase name}}Service();
+  });
+
+  it('Should instantiate successfully', async () => {
+    expect({{camelCase name}}Service).toBeDefined();
+  });
+
+  describe('execute method', () => {
+    it('should return the response successfully', async () => {
+      Connector.onExecute({ response: { status: 200, data: 'Test' } });
+
+      const response = await {{camelCase name}}Service.execute();
+
+      expect(response).toBeDefined();
+      expect(response).toBe('Test');
+    });
+  });
+});

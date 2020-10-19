@@ -1,0 +1,17 @@
+import React, { FC } from 'react';
+import { Switch, Route } from 'react-router-dom';
+
+// Routes
+import {{pascalCase name}} from './pages/{{pascalCase name}}';
+
+const {{pascalCase name}}Module: FC = () => {
+  return (
+    <>
+      <Switch>
+        <Route exact path="/{{dashCase name}}" component={ {{pascalCase name}} } />
+      </Switch>
+    </>
+  );
+};
+
+export default {{pascalCase name}}Module;

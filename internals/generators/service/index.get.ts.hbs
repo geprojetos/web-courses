@@ -1,0 +1,18 @@
+import ApiService from 'common/services/_base';
+import {{pascalCase name}}Response from './interfaces/response';
+
+class {{pascalCase name}}Service extends ApiService<{{pascalCase name}}Response> {
+  constructor() {
+    super({
+      config: () => ({
+        url: '{{url}}',
+        method: '{{method}}'
+      }),
+      handleLoader: true,
+      handleError: true
+    });
+  }
+}
+
+export default {{pascalCase name}}Service;
+export type { {{pascalCase name}}Response };
