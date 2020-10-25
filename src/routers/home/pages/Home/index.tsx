@@ -11,7 +11,7 @@ const Home: FC = () => {
       content={
         <div className="center">
           <Text />
-          <h1>{t("common:welcome")}</h1>
+          <h1>{t("home:home")}</h1>
         </div>
       }
     />
