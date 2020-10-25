@@ -1,0 +1,6 @@
+// @import "../../../styles/fonts";
+@import "../../../styles/typography";
+
+.title {
+  @include HEADING_1;
+}

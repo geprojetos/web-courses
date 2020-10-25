@@ -1,8 +1,8 @@
-import React, { lazy, Suspense } from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
+import React, { lazy, Suspense } from "react";
+import { BrowserRouter, Route } from "react-router-dom";
 
 // Imports
-const HomeModule = lazy(() => import('./home'));
+const HomeModule = lazy(() => import("./home"));
 
 export interface Router {
   path: string;
@@ -16,7 +16,7 @@ export interface Router {
 
 const RootRouter = () => (
   <Suspense fallback={<div>loading...</div>}>
-    <BrowserRouter>
+    <BrowserRouter basename="/web-courses">
       <Route path="/" component={HomeModule} />
     </BrowserRouter>
   </Suspense>

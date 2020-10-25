@@ -1,0 +1,19 @@
+import React, { FC, ReactChild } from 'react';
+
+import './styles.scss';
+
+export interface {{pascalCase name}}Props {
+  content: ReactChild;
+}
+
+const {{pascalCase name}}:FC<{{pascalCase name}}Props> = ({content}) => {
+  return (
+    <section>
+      <p>header</p>
+      <section className={`template-{{dashCase name}}`}>{content}</section>
+      <p>footer</p>
+    </section>
+  );
+};
+  
+export default {{pascalCase name}};

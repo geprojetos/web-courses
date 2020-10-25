@@ -1,13 +1,20 @@
-import React, { FC } from 'react';
+import React, { FC } from "react";
 
-import { t } from '../../../../i18n';
-import './styles.scss'
+import { t } from "../../../../i18n";
+import { Text } from "../../../../shared/components";
+import { Default } from "../../../../shared/templates";
+import "./styles.scss";
 
 const Home: FC = () => {
   return (
-    <div className="center">
-      <h1>{t('common:welcome')}</h1>
-    </div>
+    <Default
+      content={
+        <div className="center">
+          <Text />
+          <h1>{t("common:welcome")}</h1>
+        </div>
+      }
+    />
   );
 };
 

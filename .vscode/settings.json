@@ -2,8 +2,8 @@
   "files.exclude": {
     "node_modules": true,
     "internals": true,
-    "public": true,
+    "public": true
   },
   "editor.tabSize": 2,
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": true
 }

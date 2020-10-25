@@ -1,0 +1,12 @@
+import React from 'react';
+import { mount } from 'enzyme';
+
+import {{pascalCase name}} from './index';
+
+describe('[Temaplate] {{pascalCase name}}', () => {
+  const wrapper = mount(<{{pascalCase name}} content={<></>} />);
+
+  it('should renders component', () => {
+    expect(wrapper.exists()).toBeTruthy();
+  });
+});

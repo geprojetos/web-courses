@@ -1,4 +1,11 @@
 {
   "recommendations": [
+    "formulahendry.auto-rename-tag",
+    "coenraads.bracket-pair-colorizer-2",
+    "pranaygp.vscode-css-peek",
+    "ecmel.vscode-html-css",
+    "esbenp.prettier-vscode",
+    "ms-vscode.vscode-typescript-tslint-plugin",
+    "eamodio.gitlens"
   ]
 }
