@@ -1,6 +1,34 @@
 // @import "../../../styles/fonts";
 @import "../../../styles/typography";
 
-.title {
+.h1 {
+  @include HEADING_1;
+}
+
+.h2 {
+  @include HEADING_1;
+}
+
+.h3 {
+  @include HEADING_1;
+}
+
+.h4 {
+  @include HEADING_1;
+}
+
+.h5 {
+  @include HEADING_1;
+}
+
+.h6 {
+  @include HEADING_1;
+}
+
+.p {
+  @include HEADING_1;
+}
+
+.label {
   @include HEADING_1;
 }

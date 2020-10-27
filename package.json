@@ -72,6 +72,7 @@
     "enzyme-adapter-react-16": "^1.15.5",
     "husky": "^4.3.0",
     "plop": "^2.7.4",
+    "react-grid-system": "^7.1.1",
     "react-is": "^16.13.1"
   },
   "config": {
