@@ -1,6 +1,6 @@
-import React, { FC, ReactChild } from 'react';
+import React, { FC, ReactChild } from "react";
 
-import './styles.scss';
+import "./styles.scss";
 
 export interface DefaultProps {
   content: ReactChild;
@@ -9,9 +9,7 @@ export interface DefaultProps {
 const Default: FC<DefaultProps> = ({ content }) => {
   return (
     <section>
-      <p>header</p>
       <section className="template-default">{content}</section>
-      <p>footer</p>
     </section>
   );
 };

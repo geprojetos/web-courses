@@ -1,34 +1,45 @@
-// @import "../../../styles/fonts";
+@import "../../../styles/_colors";
 @import "../../../styles/typography";
 
-.h1 {
+.text-h1,
+.text-h2,
+.text-h3,
+.text-h4,
+.text-h5,
+.text-h6,
+.text-p,
+.text-label {
+  color: $WHITE1;
+}
+
+.text-h1 {
   @include HEADING_1;
 }
 
-.h2 {
-  @include HEADING_1;
+.text-h2 {
+  @include HEADING_2;
 }
 
-.h3 {
-  @include HEADING_1;
+.text-h3 {
+  @include HEADING_3;
 }
 
-.h4 {
-  @include HEADING_1;
+.text-h4 {
+  @include HEADING_4;
 }
 
-.h5 {
-  @include HEADING_1;
+.text-h5 {
+  @include HEADING_5;
 }
 
-.h6 {
-  @include HEADING_1;
+.text-h6 {
+  @include HEADING_6;
 }
 
-.p {
-  @include HEADING_1;
+.text-p {
+  @include PARAGRAPH;
 }
 
-.label {
-  @include HEADING_1;
+.text-label {
+  @include PARAGRAPH;
 }

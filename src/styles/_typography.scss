@@ -4,14 +4,60 @@ $FONT_WEIGHT_REGULAR: 400;
 $FONT_WEIGHT_MEDIUM: 500;
 
 // FONT SIZE
-$FONT_SIZE_38: 38px;
+$FONT_SIZE_40: 4rem;
+$FONT_SIZE_32: 3.2rem;
+$FONT_SIZE_28: 2.8rem;
+$FONT_SIZE_24: 2.4rem;
+$FONT_SIZE_22: 2rem;
+$FONT_SIZE_16: 1.6rem;
 
 // LINE HEIGHT
-$LINE_HEIGHT_18: 18px;
+$LINE_HEIGHT_48: 4.8rem;
+$LINE_HEIGHT_38: 3.8rem;
+$LINE_HEIGHT_33: 3.3rem;
+$LINE_HEIGHT_28: 2.8rem;
+$LINE_HEIGHT_24: 2.4rem;
+$LINE_HEIGHT_19: 1.9rem;
 
 // FONT STYLE
 @mixin HEADING_1 {
   font-weight: $FONT_WEIGHT_REGULAR;
-  font-size: $FONT_SIZE_38;
-  line-height: $LINE_HEIGHT_18;
+  font-size: $FONT_SIZE_40;
+  line-height: $LINE_HEIGHT_48;
+}
+
+@mixin HEADING_2 {
+  font-weight: $FONT_WEIGHT_REGULAR;
+  font-size: $FONT_SIZE_32;
+  line-height: $LINE_HEIGHT_38;
+}
+
+@mixin HEADING_3 {
+  font-weight: $FONT_WEIGHT_REGULAR;
+  font-size: $FONT_SIZE_28;
+  line-height: $LINE_HEIGHT_33;
+}
+
+@mixin HEADING_4 {
+  font-weight: $FONT_WEIGHT_REGULAR;
+  font-size: $FONT_SIZE_24;
+  line-height: $LINE_HEIGHT_28;
+}
+
+@mixin HEADING_5 {
+  font-weight: $FONT_WEIGHT_REGULAR;
+  font-size: $FONT_SIZE_22;
+  line-height: $LINE_HEIGHT_24;
+}
+
+@mixin HEADING_6 {
+  font-weight: $FONT_WEIGHT_REGULAR;
+  font-size: $FONT_SIZE_16;
+  line-height: $LINE_HEIGHT_19;
+}
+
+@mixin PARAGRAPH {
+  font-weight: $FONT_WEIGHT_REGULAR;
+  font-size: $FONT_SIZE_16;
+  line-height: $LINE_HEIGHT_24;
 }

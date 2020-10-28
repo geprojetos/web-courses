@@ -1,5 +1,4 @@
 import React, { FC } from "react";
-import { Visible } from "react-grid-system";
 
 import "./styles.scss";
 
@@ -22,21 +21,21 @@ export interface TextProps {
 
 const Text: FC<TextProps> = ({ type, value }) => {
   return type === TextEnum.h1 ? (
-    <h1>{value}</h1>
+    <h1 className="text-h1">{value}</h1>
   ) : type === TextEnum.h2 ? (
-    <h2>{value}</h2>
+    <h2 className="text-h2">{value}</h2>
   ) : type === TextEnum.h3 ? (
-    <h3>{value}</h3>
+    <h3 className="text-h3">{value}</h3>
   ) : type === TextEnum.h4 ? (
-    <h4>{value}</h4>
+    <h4 className="text-h4">{value}</h4>
   ) : type === TextEnum.h5 ? (
-    <h5>{value}</h5>
+    <h5 className="text-h5">{value}</h5>
   ) : type === TextEnum.h6 ? (
-    <h6>{value}</h6>
+    <h6 className="text-h6">{value}</h6>
   ) : type === TextEnum.p ? (
-    <p>{value}</p>
+    <p className="text-p">{value}</p>
   ) : (
-    <label>{value}</label>
+    <label className="text-label">{value}</label>
   );
 };
 
