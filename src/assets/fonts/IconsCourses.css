@@ -1,0 +1,22 @@
+@font-face {
+    font-family: "IconsCourses";
+    src: url("IconsCourses.ttf?e250f3b3f567ee9e3b0050b59af860f3") format("truetype");
+}
+
+i[class^="icon-"]:before, i[class*=" icon-"]:before {
+    font-family: IconsCourses !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-class:before {
+    content: "\f101";
+}
+.icon-study:before {
+    content: "\f102";
+}

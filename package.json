@@ -23,7 +23,8 @@
     "build-storybook": "build-storybook -s public",
     "generate": "plop --plopfile internals/generators/index.js",
     "pre-deploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "icons": "node create-icons"
   },
   "husky": {
     "hooks": {
@@ -65,11 +66,11 @@
     "@types/react": "^16.9.53",
     "@types/react-dom": "^16.9.8",
     "@types/react-router-dom": "^5.1.6",
-    "babel-loader": "^8.1.0",
     "commitizen": "^4.2.2",
     "cz-conventional-changelog": "^3.3.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.5",
+    "fantasticon": "^1.0.13",
     "husky": "^4.3.0",
     "plop": "^2.7.4",
     "react-grid-system": "^7.1.1",
