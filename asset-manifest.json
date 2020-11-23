@@ -1,28 +1,29 @@
 {
   "files": {
-    "main.css": "/web-courses/static/css/main.13c67894.chunk.css",
-    "main.js": "/web-courses/static/js/main.c939e7b6.chunk.js",
-    "main.js.map": "/web-courses/static/js/main.c939e7b6.chunk.js.map",
-    "runtime-main.js": "/web-courses/static/js/runtime-main.b171822d.js",
-    "runtime-main.js.map": "/web-courses/static/js/runtime-main.b171822d.js.map",
-    "static/js/2.59a2c8d5.chunk.js": "/web-courses/static/js/2.59a2c8d5.chunk.js",
-    "static/js/2.59a2c8d5.chunk.js.map": "/web-courses/static/js/2.59a2c8d5.chunk.js.map",
-    "static/css/3.79e7f76d.chunk.css": "/web-courses/static/css/3.79e7f76d.chunk.css",
-    "static/js/3.2c9981da.chunk.js": "/web-courses/static/js/3.2c9981da.chunk.js",
-    "static/js/3.2c9981da.chunk.js.map": "/web-courses/static/js/3.2c9981da.chunk.js.map",
-    "static/js/4.8a285f75.chunk.js": "/web-courses/static/js/4.8a285f75.chunk.js",
-    "static/js/4.8a285f75.chunk.js.map": "/web-courses/static/js/4.8a285f75.chunk.js.map",
+    "main.css": "/web-courses/static/css/main.a0420155.chunk.css",
+    "main.js": "/web-courses/static/js/main.c8d00834.chunk.js",
+    "main.js.map": "/web-courses/static/js/main.c8d00834.chunk.js.map",
+    "runtime-main.js": "/web-courses/static/js/runtime-main.1f730f47.js",
+    "runtime-main.js.map": "/web-courses/static/js/runtime-main.1f730f47.js.map",
+    "static/js/2.c62da317.chunk.js": "/web-courses/static/js/2.c62da317.chunk.js",
+    "static/js/2.c62da317.chunk.js.map": "/web-courses/static/js/2.c62da317.chunk.js.map",
+    "static/css/3.8ad6cea3.chunk.css": "/web-courses/static/css/3.8ad6cea3.chunk.css",
+    "static/js/3.a8ae1208.chunk.js": "/web-courses/static/js/3.a8ae1208.chunk.js",
+    "static/js/3.a8ae1208.chunk.js.map": "/web-courses/static/js/3.a8ae1208.chunk.js.map",
+    "static/js/4.7a2947ed.chunk.js": "/web-courses/static/js/4.7a2947ed.chunk.js",
+    "static/js/4.7a2947ed.chunk.js.map": "/web-courses/static/js/4.7a2947ed.chunk.js.map",
     "index.html": "/web-courses/index.html",
-    "precache-manifest.edbdf047443b9758acbba3e50845572e.js": "/web-courses/precache-manifest.edbdf047443b9758acbba3e50845572e.js",
+    "precache-manifest.7578df8df8a34c01c1df48931e63711b.js": "/web-courses/precache-manifest.7578df8df8a34c01c1df48931e63711b.js",
     "service-worker.js": "/web-courses/service-worker.js",
-    "static/css/3.79e7f76d.chunk.css.map": "/web-courses/static/css/3.79e7f76d.chunk.css.map",
-    "static/css/main.13c67894.chunk.css.map": "/web-courses/static/css/main.13c67894.chunk.css.map",
-    "static/js/2.59a2c8d5.chunk.js.LICENSE.txt": "/web-courses/static/js/2.59a2c8d5.chunk.js.LICENSE.txt"
+    "static/css/3.8ad6cea3.chunk.css.map": "/web-courses/static/css/3.8ad6cea3.chunk.css.map",
+    "static/css/main.a0420155.chunk.css.map": "/web-courses/static/css/main.a0420155.chunk.css.map",
+    "static/js/2.c62da317.chunk.js.LICENSE.txt": "/web-courses/static/js/2.c62da317.chunk.js.LICENSE.txt",
+    "static/media/mobile-banner-home.png": "/web-courses/static/media/mobile-banner-home.948ab3f5.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.b171822d.js",
-    "static/js/2.59a2c8d5.chunk.js",
-    "static/css/main.13c67894.chunk.css",
-    "static/js/main.c939e7b6.chunk.js"
+    "static/js/runtime-main.1f730f47.js",
+    "static/js/2.c62da317.chunk.js",
+    "static/css/main.a0420155.chunk.css",
+    "static/js/main.c8d00834.chunk.js"
   ]
 }
