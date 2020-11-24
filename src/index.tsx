@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import { setConfiguration } from "react-grid-system";
 import "./styles/reset.scss";
 import "./styles/_fonts.scss";
+import "./assets/fonts/IconsCourses.css";
 import "./styles/global.scss";
 import App from "./App";
 

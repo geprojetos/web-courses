@@ -2,12 +2,13 @@ import React, { FC } from "react";
 import { Col, Container, Row, Visible } from "react-grid-system";
 
 import { t } from "../../../../i18n";
-import { Button, Text } from "../../../../shared/components";
+import { Icon, Text } from "../../../../shared/components";
 import { Default } from "../../../../shared/templates";
 import BannerMobile from "../../../../assets/img/mobile-banner-home.png";
 import "./styles.scss";
+import { colorTypes } from "../../../../assets/utils/types";
 
-const BannerInternal: FC = () => {
+const HomeBanner: FC = () => {
   return (
     <>
       <Row>
@@ -28,12 +29,29 @@ const BannerInternal: FC = () => {
   );
 };
 
-const TodoInternal: FC = () => {
+const HomeTodo: FC = () => {
   return (
     <Row>
       <Col>
-        <Button type="default" size="large" />
-        <Button type="icon" size="large" />
+        <div>
+          <Icon
+            className="home-icon"
+            name="study"
+            color={colorTypes.white}
+            size={40}
+          />
+          <Text type="h5" value={t("home:toStudy")} />
+        </div>
+
+        <div>
+          <Icon
+            className="home-icon"
+            name="class"
+            color={colorTypes.white}
+            size={40}
+          />
+          <Text type="h5" value={t("home:giveClasses")} />
+        </div>
       </Col>
     </Row>
   );
@@ -46,8 +64,8 @@ const Home: FC = () => {
         content={
           <article className="home-wrapper">
             <Container fluid>
-              <BannerInternal />
-              <TodoInternal />
+              <HomeBanner />
+              <HomeTodo />
             </Container>
           </article>
         }
