@@ -11,3 +11,26 @@
 .home-banner {
   margin: 0 auto 100px auto;
 }
+
+.home-title {
+  margin-bottom: 30px;
+}
+
+.home-sub-title {
+  margin-top: 5px;
+}
+
+.home-todo {
+  border-radius: 10px;
+  height: 158px;
+  padding: 15px;
+  width: 48%;
+}
+
+.home-todo-study {
+  background-color: $PURPLE2;
+}
+
+.home-todo-class {
+  background-color: $GREEN1;
+}

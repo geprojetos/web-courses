@@ -1,59 +1,57 @@
 import React, { FC } from "react";
-import { Col, Container, Row, Visible } from "react-grid-system";
+import { Container, Visible } from "react-grid-system";
 
 import { t } from "../../../../i18n";
 import { Icon, Text } from "../../../../shared/components";
 import { Default } from "../../../../shared/templates";
 import BannerMobile from "../../../../assets/img/mobile-banner-home.png";
-import "./styles.scss";
 import { colorTypes } from "../../../../assets/utils/types";
+import "./styles.scss";
 
 const HomeBanner: FC = () => {
   return (
     <>
-      <Row>
-        <figure className="home-banner">
-          <Visible xs>
-            <img src={BannerMobile} alt="Banner" />
-          </Visible>
-        </figure>
-      </Row>
-
-      <Row>
-        <Col>
-          <Text type="h5" value={t("home:welcome")} />
-          <Text type="h6" value={t("home:whatDoYou")} />
-        </Col>
-      </Row>
+      <figure className="home-banner">
+        <Visible xs>
+          <img src={BannerMobile} alt="Banner" />
+        </Visible>
+      </figure>
     </>
   );
 };
 
 const HomeTodo: FC = () => {
   return (
-    <Row>
-      <Col>
-        <div>
+    <section>
+      <div className="home-title">
+        <Text type="h5">{t("home:welcome")}</Text>
+        <Text className="home-sub-title" type="h6">
+          {t("home:whatDoYou")}
+        </Text>
+      </div>
+
+      <div className="global-flex global-justify-between">
+        <div className="home-todo home-todo-study global-direction-column global-justify-between global-align-center">
           <Icon
             className="home-icon"
             name="study"
             color={colorTypes.white}
             size={40}
           />
-          <Text type="h5" value={t("home:toStudy")} />
+          <Text type="h5">{t("home:toStudy")}</Text>
         </div>
 
-        <div>
+        <div className="home-todo home-todo-class global-direction-column global-justify-between global-align-center">
           <Icon
             className="home-icon"
             name="class"
             color={colorTypes.white}
             size={40}
           />
-          <Text type="h5" value={t("home:giveClasses")} />
+          <Text type="h5">{t("home:giveClasses")}</Text>
         </div>
-      </Col>
-    </Row>
+      </div>
+    </section>
   );
 };
 

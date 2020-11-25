@@ -1,3 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 62.5%;
+}
+
+.global-flex,
+.global-center,
+.global-align-center,
+.global-justify-center,
+.global-justify-between,
+.global-direction-column {
+  display: flex;
+}
+
+.global-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.global-align-center {
+  align-items: center;
+}
+
+.global-justify-center {
+  justify-content: center;
+}
+
+.global-justify-between {
+  justify-content: space-between;
+}
+
+.global-direction-column {
+  flex-direction: column;
 }

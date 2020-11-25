@@ -1,42 +1,35 @@
 import React, { FC } from "react";
+import { TextTypes, TextType } from "../../../assets/utils/types";
 
 import "./styles.scss";
 
-enum TextEnum {
-  h1 = "h1",
-  h2 = "h2",
-  h3 = "h3",
-  h4 = "h4",
-  h5 = "h5",
-  h6 = "h6",
-  p = "p",
-  label = "label",
-}
-type TextType = "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "p" | "label";
-
 export interface TextProps {
   type: TextType;
-  value: string;
+  className?: string;
 }
 
-const Text: FC<TextProps> = ({ type, value }) => {
-  return type === TextEnum.h1 ? (
-    <h1 className="text-h1">{value}</h1>
-  ) : type === TextEnum.h2 ? (
-    <h2 className="text-h2">{value}</h2>
-  ) : type === TextEnum.h3 ? (
-    <h3 className="text-h3">{value}</h3>
-  ) : type === TextEnum.h4 ? (
-    <h4 className="text-h4">{value}</h4>
-  ) : type === TextEnum.h5 ? (
-    <h5 className="text-h5">{value}</h5>
-  ) : type === TextEnum.h6 ? (
-    <h6 className="text-h6">{value}</h6>
-  ) : type === TextEnum.p ? (
-    <p className="text-p">{value}</p>
+const Text: FC<TextProps> = ({ type, className, children }) => {
+  return type === TextTypes.h1 ? (
+    <h1 className={`text-h1 ${className}`}>{children}</h1>
+  ) : type === TextTypes.h2 ? (
+    <h2 className={`text-h2 ${className}`}>{children}</h2>
+  ) : type === TextTypes.h3 ? (
+    <h3 className={`text-h3 ${className}`}>{children}</h3>
+  ) : type === TextTypes.h4 ? (
+    <h4 className={`text-h4 ${className}`}>{children}</h4>
+  ) : type === TextTypes.h5 ? (
+    <h5 className={`text-h5 ${className}`}>{children}</h5>
+  ) : type === TextTypes.h6 ? (
+    <h6 className={`text-h6 ${className}`}>{children}</h6>
+  ) : type === TextTypes.p ? (
+    <p className={`text-p ${className}`}>{children}</p>
   ) : (
-    <label className="text-label">{value}</label>
+    <label className={`text-label ${className}`}>{children}</label>
   );
+};
+
+Text.defaultProps = {
+  className: "",
 };
 
 export default Text;
