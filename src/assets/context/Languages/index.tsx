@@ -10,7 +10,7 @@ interface LanguagesProps {
 }
 
 const initialvalues: LanguagesProps = {
-  lang: languageTypes.english,
+  lang: languageTypes.portuguese,
   setLang: Function as any,
   setUpdate: Function as any,
 };
@@ -32,8 +32,7 @@ export const LanguagesProvider: FC = ({ children }) => {
       value={{
         lang,
         setUpdate,
-      }}
-    >
+      }}>
       {children}
     </LanguagesContext.Provider>
   );

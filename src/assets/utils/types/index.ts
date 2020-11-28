@@ -61,8 +61,8 @@ export enum colorTypes {
 }
 
 export enum languageTypes {
+  portuguese = "pt",
   english = "en",
-  spanish = "es",
 }
 
 export enum TextTypes {

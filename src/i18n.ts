@@ -1,23 +1,31 @@
-import i18next from 'i18next';
+import i18next from "i18next";
+import { languageTypes } from "./assets/utils/types";
 
-import { 
+import {
   // imports
-  home,
-  common 
-} from './translations/translation';
+  homePt,
+  homeEn,
+  commonPt,
+  commonEn,
+} from "./translations/translation";
 
 i18next.init({
   interpolation: {
-    escapeValue: false
+    escapeValue: false,
   },
-  lng: 'en',
+  lng: languageTypes.portuguese,
   resources: {
+    pt: {
+      // exports pt
+      home: homePt,
+      common: commonPt,
+    },
     en: {
-      // exports
-      home,
-      common
-    }
-  }
+      // exports en
+      home: homeEn,
+      common: commonEn,
+    },
+  },
 });
 
 function t(key: string, options?: any) {

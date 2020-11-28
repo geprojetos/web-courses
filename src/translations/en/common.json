@@ -1,3 +1,5 @@
 {
-  "welcome": "Hello World"
+  "language": "Select language:",
+  "pt": "Portuguese",
+  "en": "English"
 }

@@ -5,12 +5,31 @@ import { t } from "../../../../i18n";
 import { Icon, Text } from "../../../../shared/components";
 import { Default } from "../../../../shared/templates";
 import BannerMobile from "../../../../assets/img/mobile-banner-home.png";
-import { colorTypes } from "../../../../assets/utils/types";
+import { colorTypes, languageTypes } from "../../../../assets/utils/types";
 import "./styles.scss";
+import { useLanguagesContext } from "../../../../assets/context/Languages";
 
-const HomeBanner: FC = () => {
+interface HomeBannerProps {
+  setUpdate: any;
+}
+
+const HomeBanner: FC<HomeBannerProps> = ({ setUpdate }: any) => {
+  const handleChangeEn = () => {
+    setUpdate(languageTypes.english);
+  };
+
+  const handleChangePt = () => {
+    setUpdate(languageTypes.portuguese);
+  };
   return (
     <>
+      <Text type="p">{t("common:language")}</Text>
+      <button className="home-button-language" onClick={handleChangePt}>
+        <Text type="p">{t("common:pt")}</Text>
+      </button>
+      <button className="home-button-language" onClick={handleChangeEn}>
+        <Text type="p">{t("common:en")}</Text>
+      </button>
       <figure className="home-banner">
         <Visible xs>
           <img src={BannerMobile} alt="Banner" />
@@ -56,13 +75,15 @@ const HomeTodo: FC = () => {
 };
 
 const Home: FC = () => {
+  const { setUpdate } = useLanguagesContext();
+
   return (
     <section className="home-container">
       <Default
         content={
           <article className="home-wrapper">
             <Container fluid>
-              <HomeBanner />
+              <HomeBanner setUpdate={setUpdate} />
               <HomeTodo />
             </Container>
           </article>

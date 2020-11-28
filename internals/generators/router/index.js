@@ -1,82 +1,112 @@
-'use strict';
+"use strict";
 
 module.exports = {
-  description: 'Add an router',
+  description: "Add an router",
   prompts: [
     {
-      type: 'input',
-      name: 'name',
-      message: 'What the route should be called?',
-      default: 'Default'
-    }
+      type: "input",
+      name: "name",
+      message: "What the route should be called?",
+      default: "Default",
+    },
   ],
   actions: () => {
     let actions = [
       // router module
       {
-        type: 'add',
+        type: "add",
         path: `../../src/routers/{{camelCase name}}/index.tsx`,
         templateFile: `./router/index.js.hbs`,
-        abortOnFail: true
+        abortOnFail: true,
       },
       {
-        type: 'append',
+        type: "append",
         path: `../../src/routers/index.tsx`,
-        pattern: '// Imports',
-        template: `const {{pascalCase name}}Module = lazy(() => import('./{{camelCase name}}'));`
+        pattern: "// Imports",
+        template: `const {{pascalCase name}}Module = lazy(() => import('./{{camelCase name}}'));`,
       },
       {
-        type: 'append',
+        type: "append",
         path: `../../src/routers/index.tsx`,
-        pattern: '} />',
-        template: `      <Route path="/{{dashCase name}}" component={ {{pascalCase name}}Module } />`
+        pattern: "} />",
+        template: `      <Route path="/{{dashCase name}}" component={ {{pascalCase name}}Module } />`,
       },
       // router page
       {
-        type: 'add',
+        type: "add",
         path: `../../src/routers/{{camelCase name}}/pages/{{properCase name}}/index.tsx`,
         templateFile: `../generators/page/index.js.hbs`,
-        abortOnFail: true
+        abortOnFail: true,
       },
       {
-        type: 'add',
+        type: "add",
         path: `../../src/routers/{{camelCase name}}/pages/{{properCase name}}/index.spec.tsx`,
         templateFile: `../generators/page/index.spec.js.hbs`,
-        abortOnFail: true
+        abortOnFail: true,
       },
       // i18n
       {
-        type: 'add',
+        type: "add",
         path: `../../src/translations/en/{{dashCase name}}.json`,
         templateFile: `./router/index.json.hbs`,
-        abortOnFail: true
+        abortOnFail: true,
       },
       {
-        type: 'append',
+        type: "add",
+        path: `../../src/translations/pt/{{dashCase name}}.json`,
+        templateFile: `./router/index.json.hbs`,
+        abortOnFail: true,
+      },
+      {
+        type: "append",
         path: `../../src/translations/translation.ts`,
-        pattern: '// imports',
-        template: `import {{camelCase name}} from './en/{{dashCase name}}.json';`
+        pattern: "// imports",
+        template: `import {{camelCase name}}Pt from './pt/{{dashCase name}}.json';`,
       },
       {
-        type: 'append',
+        type: "append",
         path: `../../src/translations/translation.ts`,
-        pattern: '// exports',
-        template: `  {{camelCase name}},`
+        pattern: "// imports",
+        template: `import {{camelCase name}}En from './en/{{dashCase name}}.json';`,
       },
       {
-        type: 'append',
-        path: `../../src/i18n.ts`,
-        pattern: '// imports',
-        template: `  {{camelCase name}},`
+        type: "append",
+        path: `../../src/translations/translation.ts`,
+        pattern: "// exports",
+        template: `  {{camelCase name}}Pt,`,
       },
       {
-        type: 'append',
+        type: "append",
+        path: `../../src/translations/translation.ts`,
+        pattern: "// exports",
+        template: `  {{camelCase name}}En,`,
+      },
+      {
+        type: "append",
         path: `../../src/i18n.ts`,
-        pattern: '// exports',
-        template: `      {{camelCase name}},`
-      }
+        pattern: "// imports",
+        template: `  {{camelCase name}}Pt,`,
+      },
+      {
+        type: "append",
+        path: `../../src/i18n.ts`,
+        pattern: "// imports",
+        template: `  {{camelCase name}}En,`,
+      },
+      {
+        type: "append",
+        path: `../../src/i18n.ts`,
+        pattern: "// exports pt",
+        template: `      {{camelCase name}}:{{camelCase name}}Pt,`,
+      },
+      {
+        type: "append",
+        path: `../../src/i18n.ts`,
+        pattern: "// exports en",
+        template: `      {{camelCase name}}:{{camelCase name}}En,`,
+      },
     ];
 
     return actions;
-  }
+  },
 };

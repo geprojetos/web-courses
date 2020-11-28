@@ -34,3 +34,13 @@
 .home-todo-class {
   background-color: $GREEN1;
 }
+
+.home-button-language {
+  background-color: $PURPLE2;
+  border: 0;
+  color: $WHITE1;
+  margin-right: 5px;
+  &:hover {
+    cursor: pointer;
+  }
+}
