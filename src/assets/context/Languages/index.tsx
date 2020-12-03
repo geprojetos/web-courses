@@ -38,6 +38,11 @@ export const LanguagesProvider: FC = ({ children }) => {
   );
 };
 
+/**
+ * @alias useLanguagesContext
+ * @param {}
+ * @description method used to set language context
+ */
 export const useLanguagesContext = () => {
   const context = useContext(LanguagesContext);
   const { lang, setUpdate } = context;

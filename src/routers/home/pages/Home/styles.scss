@@ -36,11 +36,22 @@
 }
 
 .home-button-language {
-  background-color: $PURPLE2;
-  border: 0;
+  background-color: $PURPLE1;
+  border: 1px solid $PURPLE1;
+  border-radius: 4px;
   color: $WHITE1;
   margin-right: 5px;
+  transition: all 0.3s ease-in-out;
   &:hover {
+    background-color: $PURPLE2;
+    border: 1px solid $PURPLE2;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
   }
+}
+
+.home-language-active {
+  background-color: $PURPLE2;
+  border: 1px solid $PURPLE2;
+  border-radius: 4px;
 }

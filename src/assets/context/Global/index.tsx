@@ -1,4 +1,4 @@
-import React, { createContext, FC, useContext, useState } from 'react';
+import React, { createContext, FC, useContext, useState } from "react";
 
 interface GlobalProps {
   token: string;
@@ -11,17 +11,17 @@ interface GlobalProps {
 }
 
 const initialValues: GlobalProps = {
-  token: '',
+  token: "",
   setToken: Function as any,
-  email: '',
+  email: "",
   setEmail: Function as any,
-  userId: '',
+  userId: "",
   setUserId: Function as any,
-  setReset: Function as any
+  setReset: Function as any,
 };
 
-export const GlobalContext = createContext({
-  ...initialValues
+const GlobalContext = createContext({
+  ...initialValues,
 });
 
 export const GlobalProvider: FC = ({ children }) => {
@@ -44,14 +44,18 @@ export const GlobalProvider: FC = ({ children }) => {
         setEmail,
         userId,
         setUserId,
-        setReset
-      }}
-    >
+        setReset,
+      }}>
       {children}
     </GlobalContext.Provider>
   );
 };
 
+/**
+ * @alias useGlobalContext
+ * @param {}
+ * @description method used to set global context
+ */
 export const useGlobalContext = () => {
   const context = useContext(GlobalContext);
   const {
@@ -61,7 +65,7 @@ export const useGlobalContext = () => {
     setEmail,
     userId,
     setUserId,
-    setReset
+    setReset,
   } = context;
   return {
     token,
@@ -70,6 +74,6 @@ export const useGlobalContext = () => {
     setEmail,
     userId,
     setUserId,
-    setReset
+    setReset,
   };
 };

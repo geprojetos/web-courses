@@ -1,4 +1,7 @@
 {
+  "language": "Select a language:",
+  "pt": "Portuguese",
+  "en": "English",
   "home": "Home page",
   "proffy": "Proffy",
   "platformCourses": "Your platform coruses",
@@ -6,6 +9,6 @@
   "whatDoYou": "What do you want to do?",
   "courses": "Courses",
   "categories": "Categories",
-  "toStudy": "to study",
-  "giveClasses": "give classes"
+  "toStudy": "To study",
+  "giveClasses": "Give classes"
 }

@@ -45,6 +45,11 @@ export const HistoryProvider: FC = ({ children }) => {
   );
 };
 
+/**
+ * @alias useHistoryContext
+ * @param {}
+ * @description method used to set history context
+ */
 export const useHistoryContext = () => {
   const context = useContext(HistoryContext);
   const { previous, setPrevious, current, setCurrent, setPath } = context;

@@ -6,30 +6,59 @@ import { Icon, Text } from "../../../../shared/components";
 import { Default } from "../../../../shared/templates";
 import BannerMobile from "../../../../assets/img/mobile-banner-home.png";
 import { colorTypes, languageTypes } from "../../../../assets/utils/types";
-import "./styles.scss";
 import { useLanguagesContext } from "../../../../assets/context/languages";
+import "./styles.scss";
 
 interface HomeBannerProps {
   setUpdate: any;
 }
 
-const HomeBanner: FC<HomeBannerProps> = ({ setUpdate }: any) => {
+const HomeLanguages: FC<HomeBannerProps> = ({ setUpdate }) => {
+  // hooks
+  const { lang } = useLanguagesContext();
+
+  /**
+   * @alias handleChangeEn
+   * @param {}
+   * @description method used to change language for english
+   */
   const handleChangeEn = () => {
     setUpdate(languageTypes.english);
   };
 
+  /**
+   * @alias handleChangePt
+   * @param {}
+   * @description method used to change language for portuguese
+   */
   const handleChangePt = () => {
     setUpdate(languageTypes.portuguese);
   };
+
+  return (
+    <div>
+      <Text type="p">{t("home:language")}</Text>
+      <button
+        className={`home-button-language ${
+          lang == languageTypes.portuguese && "home-language-active"
+        }`}
+        onClick={handleChangePt}>
+        <Text type="p">{t("home:pt")}</Text>
+      </button>
+      <button
+        className={`home-button-language ${
+          lang == languageTypes.english && "home-language-active"
+        }`}
+        onClick={handleChangeEn}>
+        <Text type="p">{t("home:en")}</Text>
+      </button>
+    </div>
+  );
+};
+
+const HomeBanner: FC = () => {
   return (
     <>
-      <Text type="p">{t("common:language")}</Text>
-      <button className="home-button-language" onClick={handleChangePt}>
-        <Text type="p">{t("common:pt")}</Text>
-      </button>
-      <button className="home-button-language" onClick={handleChangeEn}>
-        <Text type="p">{t("common:en")}</Text>
-      </button>
       <figure className="home-banner">
         <Visible xs>
           <img src={BannerMobile} alt="Banner" />
@@ -75,6 +104,7 @@ const HomeTodo: FC = () => {
 };
 
 const Home: FC = () => {
+  // hooks
   const { setUpdate } = useLanguagesContext();
 
   return (
@@ -83,7 +113,8 @@ const Home: FC = () => {
         content={
           <article className="home-wrapper">
             <Container fluid>
-              <HomeBanner setUpdate={setUpdate} />
+              <HomeLanguages setUpdate={setUpdate} />
+              <HomeBanner />
               <HomeTodo />
             </Container>
           </article>
