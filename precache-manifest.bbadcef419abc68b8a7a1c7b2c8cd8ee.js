@@ -1,14 +1,14 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ca30b171b7c5a7f49eb67e821fffbf4d",
+    "revision": "cbfdaef70c90b28cc1cd1d29f625327b",
     "url": "/web-courses/index.html"
   },
   {
-    "revision": "cb2ec0eb1a4dccf1fa67",
-    "url": "/web-courses/static/css/3.eff24672.chunk.css"
+    "revision": "586797c7d1287da86dfd",
+    "url": "/web-courses/static/css/3.69d594a8.chunk.css"
   },
   {
-    "revision": "a2090ef8ea060188c831",
+    "revision": "03ec2a230607e7afafed",
     "url": "/web-courses/static/css/main.a3c0d9de.chunk.css"
   },
   {
@@ -20,16 +20,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/web-courses/static/js/2.0eb244c1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "cb2ec0eb1a4dccf1fa67",
-    "url": "/web-courses/static/js/3.8dc70ae6.chunk.js"
+    "revision": "586797c7d1287da86dfd",
+    "url": "/web-courses/static/js/3.6ce28956.chunk.js"
   },
   {
-    "revision": "a2090ef8ea060188c831",
-    "url": "/web-courses/static/js/main.67469694.chunk.js"
+    "revision": "03ec2a230607e7afafed",
+    "url": "/web-courses/static/js/main.b1f6a798.chunk.js"
   },
   {
-    "revision": "9fa65876f24fd44425d0",
-    "url": "/web-courses/static/js/runtime-main.5aef79bd.js"
+    "revision": "cf87bfebb0b8a60e197b",
+    "url": "/web-courses/static/js/runtime-main.1a262d3f.js"
   },
   {
     "revision": "e2390b7d4d1826b0abf805c6f2b69ac5",
