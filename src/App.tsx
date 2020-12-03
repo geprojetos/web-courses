@@ -1,10 +1,8 @@
-import React from 'react';
-import RootRouter from './routers';
+import React from "react";
+import RootRouter from "./routers";
 
 function App() {
-  return (
-    <RootRouter />
-  );
+  return <RootRouter />;
 }
 
 export default App;

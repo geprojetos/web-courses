@@ -1,6 +1,6 @@
-import React, { FC } from 'react';
+import React, { FC } from "react";
 
-import './styles.scss';
+import "./styles.scss";
 
 const StorybookDefault: FC = ({ children }) => {
   return <section className="story-default">{children}</section>;

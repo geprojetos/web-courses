@@ -1,13 +1,13 @@
-import React from 'react';
+import React from "react";
 
-import { mount } from 'enzyme';
+import { mount } from "enzyme";
 
-import StorybookDefault from './index';
+import StorybookDefault from "./index";
 
-describe('[Component] StorybookDefault', () => {
+describe("[Component] StorybookDefault", () => {
   const wrapper = mount(<StorybookDefault />);
 
-  it('should renders component', () => {
+  it("should renders component", () => {
     expect(wrapper.exists()).toBeTruthy();
   });
 });

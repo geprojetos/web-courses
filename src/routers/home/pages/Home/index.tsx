@@ -7,7 +7,7 @@ import { Default } from "../../../../shared/templates";
 import BannerMobile from "../../../../assets/img/mobile-banner-home.png";
 import { colorTypes, languageTypes } from "../../../../assets/utils/types";
 import "./styles.scss";
-import { useLanguagesContext } from "../../../../assets/context/Languages";
+import { useLanguagesContext } from "../../../../assets/context/languages";
 
 interface HomeBannerProps {
   setUpdate: any;

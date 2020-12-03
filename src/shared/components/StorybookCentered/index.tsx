@@ -1,6 +1,6 @@
-import React, { FC } from 'react';
+import React, { FC } from "react";
 
-import './styles.scss';
+import "./styles.scss";
 
 const StorybookCentered: FC = ({ children }) => {
   return <section className="story-center">{children}</section>;

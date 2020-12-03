@@ -21,8 +21,7 @@ const Icon: FC<IconProps> = ({ name, size, color, onClick, className }) => {
         color: color ? color : colorTypes.secondaryGray,
       }}
       className={`icon icon-${name} ${className}`}
-      onClick={onClick}
-    ></i>
+      onClick={onClick}></i>
   );
 };
 

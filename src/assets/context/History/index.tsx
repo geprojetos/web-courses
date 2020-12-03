@@ -1,4 +1,4 @@
-import React, { createContext, FC, useContext, useState } from 'react';
+import React, { createContext, FC, useContext, useState } from "react";
 
 interface HistoryProps {
   previous?: string;
@@ -9,11 +9,11 @@ interface HistoryProps {
 }
 
 const initialValues: HistoryProps = {
-  previous: '/',
+  previous: "/",
   setPrevious: Function as any,
-  current: '/',
+  current: "/",
   setCurrent: Function as any,
-  setPath: Function as any
+  setPath: Function as any,
 };
 
 const HistoryContext = createContext(initialValues);
@@ -38,9 +38,8 @@ export const HistoryProvider: FC = ({ children }) => {
         setPrevious,
         current,
         setCurrent,
-        setPath
-      }}
-    >
+        setPath,
+      }}>
       {children}
     </HistoryContext.Provider>
   );
@@ -54,6 +53,6 @@ export const useHistoryContext = () => {
     setPrevious,
     current,
     setCurrent,
-    setPath
+    setPath,
   };
 };

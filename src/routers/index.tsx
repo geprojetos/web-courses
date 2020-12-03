@@ -2,9 +2,9 @@ import React, { FC, lazy, Suspense } from "react";
 import { BrowserRouter, Redirect, Route, RouteProps } from "react-router-dom";
 import { ScreenClassProvider } from "react-grid-system";
 
-import { GlobalProvider, useGlobalContext } from "../assets/context/Global";
-import { HistoryProvider, useHistoryContext } from "../assets/context/History";
-import { LanguagesProvider } from "../assets/context/Languages";
+import { GlobalProvider, useGlobalContext } from "../assets/context/global";
+import { HistoryProvider, useHistoryContext } from "../assets/context/history";
+import { LanguagesProvider } from "../assets/context/languages";
 
 // Imports
 const HomeModule = lazy(() => import("./home"));
