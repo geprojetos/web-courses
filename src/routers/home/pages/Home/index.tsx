@@ -53,14 +53,14 @@ const HomeLanguages: FC<HomeBannerProps> = ({ setUpdate }) => {
       <Text type="p">{t("home:language")}</Text>
       <button
         className={`home-language-button ${
-          lang == LanguageTypes.portuguese && "home-language-active"
+          lang === LanguageTypes.portuguese && "home-language-active"
         }`}
         onClick={handleChangePt}>
         <Text type="p">{t("home:pt")}</Text>
       </button>
       <button
         className={`home-language-button ${
-          lang == LanguageTypes.english && "home-language-active"
+          lang === LanguageTypes.english && "home-language-active"
         }`}
         onClick={handleChangeEn}>
         <Text type="p">{t("home:en")}</Text>

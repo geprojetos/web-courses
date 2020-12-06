@@ -10,4 +10,9 @@ export default {
 
 const Template: Story<IconProps> = (args) => <Icon {...args} />;
 
-export const Primary = Template.bind({});
+export const Default = Template.bind({});
+Default.args = {
+  color: "#8257e5",
+  name: "proffy",
+  size: 4,
+};
