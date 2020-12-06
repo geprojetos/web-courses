@@ -1,5 +1,5 @@
 import i18next from "i18next";
-import { languageTypes } from "./assets/utils/types";
+import { LanguageTypes } from "./assets/utils/types";
 
 import {
   // imports
@@ -13,7 +13,7 @@ i18next.init({
   interpolation: {
     escapeValue: false,
   },
-  lng: languageTypes.portuguese,
+  lng: LanguageTypes.portuguese,
   resources: {
     pt: {
       // exports pt

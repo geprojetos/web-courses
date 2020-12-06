@@ -10,5 +10,12 @@
   "courses": "Cursos",
   "categories": "Categorias",
   "toStudy": "Estudar",
-  "giveClasses": "Dar aulas"
+  "giveClasses": "Dar aulas",
+  "yourPlatform": "Sua plataforma de cursos.",
+  "altBanner": "Imagem do banner",
+  "titleBanner": "Imagem do banner",
+  "altIconStudy": "Ícone estudar",
+  "titleIconStudy": "Ícone estudar",
+  "altIconClasses": "Ícone dar aula",
+  "titleIconClasses": "Ícone dar aula"
 }

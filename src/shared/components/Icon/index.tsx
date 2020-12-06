@@ -1,7 +1,7 @@
 import React, { FC, MouseEvent } from "react";
 
 import { IconsCoursesId } from "../../../assets/fonts/IconsCourses";
-import { colorTypes } from "../../../assets/utils/types";
+import { ColorTypes } from "../../../assets/utils/types";
 
 import "./styles.scss";
 
@@ -17,8 +17,9 @@ const Icon: FC<IconProps> = ({ name, size, color, onClick, className }) => {
   return (
     <i
       style={{
-        fontSize: size ? size : "24px",
-        color: color ? color : colorTypes.secondaryGray,
+        // fontSize: size ? size : "24px",
+        fontSize: size ? `${size}rem` : "2.4rem",
+        color: color ? color : ColorTypes.secondaryGray,
       }}
       className={`icon icon-${name} ${className}`}
       onClick={onClick}></i>

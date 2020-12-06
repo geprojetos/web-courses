@@ -1,4 +1,4 @@
-export enum colorTypes {
+export enum ColorTypes {
   mainText = "#333333",
   gray1 = "#707070",
   gray2 = "#707070",
@@ -60,7 +60,7 @@ export enum colorTypes {
   successLighter = lighter4,
 }
 
-export enum languageTypes {
+export enum LanguageTypes {
   portuguese = "pt",
   english = "en",
 }
@@ -76,3 +76,12 @@ export enum TextTypes {
   label = "label",
 }
 export type TextType = "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "p" | "label";
+
+export const screenObj = {
+  xs: "xs",
+  sm: "sm",
+  md: "md",
+  lg: "lg",
+  xl: "xl",
+  xxl: "xxl",
+};

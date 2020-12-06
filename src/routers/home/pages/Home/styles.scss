@@ -1,41 +1,16 @@
 @import "../../../../styles/colors";
+@import "../../../../styles/screens";
 
-.home-container {
-  background-color: $PURPLE1;
+/**
+******************
+*  HomeLanguage  *
+******************
+**/
+.home-language {
+  text-align: right;
+  margin-bottom: 40px;
 }
-
-.home-wrapper {
-  margin-top: 50px;
-}
-
-.home-banner {
-  margin: 0 auto 100px auto;
-}
-
-.home-title {
-  margin-bottom: 30px;
-}
-
-.home-sub-title {
-  margin-top: 5px;
-}
-
-.home-todo {
-  border-radius: 10px;
-  height: 158px;
-  padding: 15px;
-  width: 48%;
-}
-
-.home-todo-study {
-  background-color: $PURPLE2;
-}
-
-.home-todo-class {
-  background-color: $GREEN1;
-}
-
-.home-button-language {
+.home-language-button {
   background-color: $PURPLE1;
   border: 1px solid $PURPLE1;
   border-radius: 4px;
@@ -54,4 +29,72 @@
   background-color: $PURPLE2;
   border: 1px solid $PURPLE2;
   border-radius: 4px;
+}
+
+/**
+****************
+*  HomeBanner  *
+****************
+**/
+.home-banner {
+  margin-bottom: 100px;
+}
+
+.home-banner-proffy {
+  margin-right: 50px;
+}
+
+.home-banner-icon {
+  width: 100%;
+}
+
+/**
+**************
+*  HomeTodo  *
+**************
+**/
+.home-todo-title {
+  margin-bottom: 30px;
+}
+
+.home-todo-subtitle {
+  margin-top: 5px;
+}
+
+.home-todo-action {
+  border-radius: 10px;
+  height: 140px;
+  padding: 15px;
+  width: 48%;
+
+  @include lg {
+    height: 100px;
+    width: 250px;
+    margin-left: 10px;
+  }
+}
+
+.home-todo-study {
+  background-color: $PURPLE2;
+}
+
+.home-todo-class {
+  background-color: $GREEN1;
+}
+
+.home-todo-icon {
+  width: 4rem;
+}
+
+/**
+**********
+*  Home  *
+**********
+**/
+.home-container {
+  background-color: $PURPLE1;
+}
+
+.home-wrapper {
+  padding: 20px 0;
 }

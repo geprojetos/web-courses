@@ -1,7 +1,7 @@
 import React, { createContext, FC, useContext, useState } from "react";
 
 import i18next from "../../../i18n";
-import { languageTypes } from "../../utils/types";
+import { LanguageTypes } from "../../utils/types";
 
 interface LanguagesProps {
   lang: string;
@@ -10,7 +10,7 @@ interface LanguagesProps {
 }
 
 const initialvalues: LanguagesProps = {
-  lang: languageTypes.portuguese,
+  lang: LanguageTypes.portuguese,
   setLang: Function as any,
   setUpdate: Function as any,
 };

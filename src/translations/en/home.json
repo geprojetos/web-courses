@@ -10,5 +10,12 @@
   "courses": "Courses",
   "categories": "Categories",
   "toStudy": "To study",
-  "giveClasses": "Give classes"
+  "giveClasses": "Give classes",
+  "yourPlatform": "Your course platform.",
+  "altBanner": "Banner image",
+  "titleBanner": "Banner image",
+  "altIconStudy": "Icon study",
+  "titleIconStudy": "Icon study",
+  "altIconClasses": "Icon clasess",
+  "titleIconClasses": "Icon clasess"
 }
