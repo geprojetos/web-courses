@@ -3,6 +3,8 @@ import { LanguageTypes } from "./assets/utils/types";
 
 import {
   // imports
+  categoriesEn,
+  categoriesPt,
   homePt,
   homeEn,
   commonPt,
@@ -17,11 +19,13 @@ i18next.init({
   resources: {
     pt: {
       // exports pt
+      categories:categoriesPt,
       home: homePt,
       common: commonPt,
     },
     en: {
       // exports en
+      categories:categoriesEn,
       home: homeEn,
       common: commonEn,
     },

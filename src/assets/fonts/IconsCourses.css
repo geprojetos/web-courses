@@ -1,6 +1,6 @@
 @font-face {
     font-family: "IconsCourses";
-    src: url("IconsCourses.ttf?e285632d3303d9681c0ca583e0a040bb") format("truetype");
+    src: url("IconsCourses.ttf?db0ef29fb932a9460144658ed7fc6922") format("truetype");
 }
 
 i[class^="icon-"]:before, i[class*=" icon-"]:before {
@@ -14,12 +14,15 @@ i[class^="icon-"]:before, i[class*=" icon-"]:before {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-class:before {
+.icon-back:before {
     content: "\f101";
 }
-.icon-proffy:before {
+.icon-class:before {
     content: "\f102";
 }
-.icon-study:before {
+.icon-proffy:before {
     content: "\f103";
+}
+.icon-study:before {
+    content: "\f104";
 }

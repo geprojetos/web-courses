@@ -17,9 +17,8 @@ const Icon: FC<IconProps> = ({ name, size, color, onClick, className }) => {
   return (
     <i
       style={{
-        // fontSize: size ? size : "24px",
         fontSize: size ? `${size}rem` : "2.4rem",
-        color: color ? color : ColorTypes.secondaryGray,
+        color: color ? color : ColorTypes.PURPLE1,
       }}
       className={`icon icon-${name} ${className}`}
       onClick={onClick}></i>

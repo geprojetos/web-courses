@@ -1,0 +1,18 @@
+@import "../../../styles/colors";
+
+.header {
+  background-color: $PURPLE1;
+  height: 30px;
+  padding: 0 15px;
+}
+
+.header-back-icon {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

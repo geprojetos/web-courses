@@ -1,3 +1,5 @@
+@import "./colors";
+
 * {
   box-sizing: border-box;
 }
@@ -34,4 +36,18 @@ html {
 
 .global-direction-column {
   flex-direction: column;
+}
+
+.global-header-bkg {
+  position: absolute;
+  background: $PURPLE2;
+  width: 100%;
+  height: 250px;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.global-relative {
+  position: relative;
 }

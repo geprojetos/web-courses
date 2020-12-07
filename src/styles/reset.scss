@@ -111,6 +111,9 @@ section {
 body {
   line-height: 1;
 }
+a {
+  text-decoration: none;
+}
 ol,
 ul {
   list-style: none;
@@ -123,7 +126,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 table {

@@ -21,6 +21,7 @@ import { useLanguagesContext } from "../../../../assets/context/languages";
 import studyIcon from "../../../../assets/icons/study.svg";
 import classIcon from "../../../../assets/icons/class.svg";
 import "./styles.scss";
+import { Link } from "react-router-dom";
 
 interface HomeBannerProps {
   setUpdate: any;
@@ -78,7 +79,7 @@ const HomeBanner: FC = () => {
             className="home-banner-proffy"
             size={10}
             name="proffy"
-            color={ColorTypes.white}
+            color={ColorTypes.WHITE1}
           />
           <Text type="h5">{t("home:yourPlatform")}</Text>
         </div>
@@ -132,18 +133,20 @@ const HomeTodo: FC = () => {
                   alt={t("home:altIconStudy")}
                   title={t("home:titleIconStudy")}
                 />
-                <Text type="h5">{t("home:toStudy")}</Text>
+                <Text type="h5">{t("home:courses")}</Text>
               </div>
 
-              <div className="home-todo-action home-todo-class global-direction-column global-justify-between global-align-center">
+              <Link
+                to="/categories/list"
+                className="home-todo-action home-todo-class global-direction-column global-justify-between global-align-center">
                 <img
                   className="home-todo-icon"
                   src={classIcon}
                   alt={t("home:altIconClasses")}
                   title={t("home:titleIconClasses")}
                 />
-                <Text type="h5">{t("home:giveClasses")}</Text>
-              </div>
+                <Text type="h5">{t("home:categories")}</Text>
+              </Link>
             </div>
           </section>
         );

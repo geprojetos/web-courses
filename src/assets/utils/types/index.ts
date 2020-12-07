@@ -5,6 +5,7 @@ export enum ColorTypes {
   GREEN1 = "#04d361",
   GREEN2 = "#24ef7f",
   WHITE1 = "#fff",
+  GRAY1 = "#F0F0F7",
 }
 
 export enum LanguageTypes {
