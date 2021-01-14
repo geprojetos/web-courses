@@ -8,7 +8,7 @@ import { Link, useHistory } from "react-router-dom";
 
 export interface HeaderProps {}
 
-const Header: FC<HeaderProps> = ({}) => {
+const Header: FC<HeaderProps> = () => {
   const history = useHistory();
 
   const handleBack = () => {

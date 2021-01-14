@@ -1,4 +1,5 @@
 // import
+import Select from './Select';
 import Header from './Header';
 import StorybookCentered from "./StorybookCentered";
 import StorybookDefault from "./StorybookDefault";
@@ -7,6 +8,7 @@ import Text from "./Text";
 
 export {
   // exports
+  Select,
   Header,
   StorybookCentered,
   StorybookDefault,
