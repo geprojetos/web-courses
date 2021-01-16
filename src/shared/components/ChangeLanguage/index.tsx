@@ -1,11 +1,11 @@
-import React, { FC } from "react";
+import React, { FC } from 'react';
 
-import { LanguageEnum } from "../../../assets/enum";
-import { Text } from "../";
-import { t } from "../../../i18n";
+import { LanguageEnum } from '../../../assets/enum';
+import { Text } from '../';
+import { t } from '../../../i18n';
 
-import "./styles.scss";
-import { useLanguagesContext } from "../../../assets/context/languages";
+import './styles.scss';
+import { useLanguagesContext } from '../../../assets/context';
 
 const ChangeLanguage: FC = () => {
   // hooks
@@ -30,21 +30,21 @@ const ChangeLanguage: FC = () => {
   };
 
   return (
-    <div className="home-language">
-      <Text type="p">{t("home:language")}</Text>
+    <div className='home-language'>
+      <Text type='p'>{t('home:language')}</Text>
       <button
         className={`home-language-button ${
-          lang === LanguageEnum.portuguese && "home-language-active"
+          lang === LanguageEnum.portuguese && 'home-language-active'
         }`}
         onClick={handleChangePt}>
-        <Text type="p">{t("home:pt")}</Text>
+        <Text type='p'>{t('home:pt')}</Text>
       </button>
       <button
         className={`home-language-button ${
-          lang === LanguageEnum.english && "home-language-active"
+          lang === LanguageEnum.english && 'home-language-active'
         }`}
         onClick={handleChangeEn}>
-        <Text type="p">{t("home:en")}</Text>
+        <Text type='p'>{t('home:en')}</Text>
       </button>
     </div>
   );

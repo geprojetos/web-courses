@@ -5,12 +5,12 @@ import React, {
   useCallback,
   useContext,
   useReducer,
-} from "react";
+} from 'react';
 
-import i18next from "../../../i18n";
-import { LanguageEnum } from "../../enum";
-import { reducerLanguage } from "../../reducers";
-import { LanguageReducerAction, LanguageReducerState } from "../../types";
+import i18next from '../../i18n';
+import { LanguageEnum } from '../enum';
+import { reducerLanguage } from '../reducers';
+import { LanguageReducerAction, LanguageReducerState } from '../types';
 
 const initialState: LanguageReducerState = {
   lang: LanguageEnum.portuguese,
@@ -31,7 +31,7 @@ export const LanguagesProvider: FC = ({ children }) => {
   const setUpdate = useCallback(
     (language: string) => {
       i18next.changeLanguage(language);
-      dispact({ type: "language_change", payload: language });
+      dispact({ type: 'language_change', payload: language });
     },
     [dispact]
   );

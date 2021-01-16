@@ -1,12 +1,12 @@
-import { LanguageReducerAction, LanguageReducerState } from "../types";
-import { LanguageReducerEnum } from "../enum";
+import { LanguageReducerAction, LanguageReducerState } from '../types';
+import { LanguageReducerEnum } from '../enum';
 
 export const reducerLanguage = (
   state: LanguageReducerState,
   action: LanguageReducerAction
 ) => {
   switch (action.type) {
-    case LanguageReducerEnum.LANGUAGE_CHANGE:
+    case LanguageReducerEnum.CHANGE_LANGUAGE:
       return {
         ...state,
         lang: action.payload,

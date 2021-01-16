@@ -1,4 +1,5 @@
-import { reducerSelect } from "./reducerSelect";
-import { reducerLanguage } from "./reducerLanguage";
+import { reducerSelect } from './select';
+import { reducerLanguage } from './language';
+import { reducerGlobal } from './global';
 
-export { reducerSelect, reducerLanguage };
+export { reducerSelect, reducerLanguage, reducerGlobal };
