@@ -7,7 +7,7 @@ import { HistoryProvider, useHistoryContext } from "../assets/context/history";
 import { LanguagesProvider } from "../assets/context/languages";
 
 // Imports
-const CategoriesModule = lazy(() => import('./categories'));
+const CategoriesModule = lazy(() => import("./categories"));
 const HomeModule = lazy(() => import("./home"));
 
 export const PublicRoute: FC<RouteProps | any> = ({ component, ...rest }) => {
@@ -58,7 +58,7 @@ const RootRouter = () => (
           <LanguagesProvider>
             <ScreenClassProvider>
               <PublicRoute path="/" component={HomeModule} />
-      <Route path="/categories" component={ CategoriesModule } />
+              <Route path="/categories" component={CategoriesModule} />
             </ScreenClassProvider>
           </LanguagesProvider>
         </HistoryProvider>
