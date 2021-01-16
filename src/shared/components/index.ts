@@ -1,4 +1,5 @@
 // import
+import ChangeLanguage from './ChangeLanguage';
 import Select from './Select';
 import Header from './Header';
 import StorybookCentered from "./StorybookCentered";
@@ -8,6 +9,7 @@ import Text from "./Text";
 
 export {
   // exports
+  ChangeLanguage,
   Select,
   Header,
   StorybookCentered,

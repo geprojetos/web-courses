@@ -1,4 +1,10 @@
-import React, { createContext, FC, useContext, useState } from "react";
+import React, {
+  createContext,
+  FC,
+  useCallback,
+  useContext,
+  useState,
+} from "react";
 
 import i18next from "../../../i18n";
 import { LanguageTypes } from "../../utils/types";
@@ -22,10 +28,13 @@ const LanguagesContext = createContext({
 export const LanguagesProvider: FC = ({ children }) => {
   const [lang, setLang] = useState(initialvalues.lang);
 
-  const setUpdate = (language: string) => {
-    i18next.changeLanguage(language);
-    setLang(language);
-  };
+  const setUpdate = useCallback(
+    (language: string) => {
+      i18next.changeLanguage(language);
+      setLang(language);
+    },
+    [setLang]
+  );
 
   return (
     <LanguagesContext.Provider
