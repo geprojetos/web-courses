@@ -13,7 +13,8 @@ import { Icon, Text, ChangeLanguage } from "../../../../shared/components";
 import { Default } from "../../../../shared/templates";
 import BannerMobile from "../../../../assets/img/mobile-banner-home.png";
 import BannerDesktop from "../../../../assets/img/desktop-banner-home.png";
-import { ColorTypes, screenObj } from "../../../../assets/utils/types";
+import { ColorsEnum } from "../../../../assets/enum";
+import { screenObj } from "../../../../assets/types";
 import studyIcon from "../../../../assets/icons/study.svg";
 import classIcon from "../../../../assets/icons/class.svg";
 import "./styles.scss";
@@ -28,7 +29,7 @@ const HomeBanner: FC = memo(() => {
             className="home-banner-proffy"
             size={10}
             name="proffy"
-            color={ColorTypes.WHITE1}
+            color={ColorsEnum.WHITE1}
           />
           <Text type="h5">{t("home:yourPlatform")}</Text>
         </div>

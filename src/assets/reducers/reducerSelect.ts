@@ -1,4 +1,4 @@
-import { SelectReducerTypeEnum } from "../enum";
+import { SelectReducerEnum } from "../enum";
 import { SelectReducerAction, SelectReducerState } from "../types";
 
 export const reducerSelect = (
@@ -6,7 +6,7 @@ export const reducerSelect = (
   action: SelectReducerAction
 ) => {
   switch (action.type) {
-    case SelectReducerTypeEnum.SELECT_CHANGE:
+    case SelectReducerEnum.SELECT_CHANGE:
       return {
         ...state,
         value: action.payload,

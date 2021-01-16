@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { ColorTypes } from "../../../assets/utils/types";
+import { ColorsEnum } from "../../../assets/enum";
 import Icon from "../Icon";
 
 import backIcon from "../../../assets/icons/back.svg";
@@ -22,7 +22,7 @@ const Header: FC<HeaderProps> = () => {
       </button>
 
       <Link to="/">
-        <Icon name="proffy" size={1} color={ColorTypes.WHITE1} />
+        <Icon name="proffy" size={1} color={ColorsEnum.WHITE1} />
       </Link>
     </header>
   );

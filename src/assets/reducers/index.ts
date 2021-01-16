@@ -1,3 +1,4 @@
 import { reducerSelect } from "./reducerSelect";
+import { reducerLanguage } from "./reducerLanguage";
 
-export { reducerSelect };
+export { reducerSelect, reducerLanguage };

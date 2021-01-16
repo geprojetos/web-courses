@@ -1,5 +1,5 @@
 import i18next from "i18next";
-import { LanguageTypes } from "./assets/utils/types";
+import { LanguageEnum } from "./assets/enum";
 
 import {
   // imports
@@ -15,17 +15,17 @@ i18next.init({
   interpolation: {
     escapeValue: false,
   },
-  lng: LanguageTypes.portuguese,
+  lng: LanguageEnum.portuguese,
   resources: {
     pt: {
       // exports pt
-      categories:categoriesPt,
+      categories: categoriesPt,
       home: homePt,
       common: commonPt,
     },
     en: {
       // exports en
-      categories:categoriesEn,
+      categories: categoriesEn,
       home: homeEn,
       common: commonEn,
     },

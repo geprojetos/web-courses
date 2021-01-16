@@ -1,7 +1,7 @@
 import React, { FC, MouseEvent } from "react";
 
 import { IconsCoursesId } from "../../../assets/fonts/IconsCourses";
-import { ColorTypes } from "../../../assets/utils/types";
+import { ColorsEnum } from "../../../assets/enum";
 
 import "./styles.scss";
 
@@ -18,7 +18,7 @@ const Icon: FC<IconProps> = ({ name, size, color, onClick, className }) => {
     <i
       style={{
         fontSize: size ? `${size}rem` : "2.4rem",
-        color: color ? color : ColorTypes.PURPLE1,
+        color: color ? color : ColorsEnum.PURPLE1,
       }}
       className={`icon icon-${name} ${className}`}
       onClick={onClick}></i>

@@ -1,39 +1,39 @@
 import React, {
   createContext,
   FC,
+  Reducer,
   useCallback,
   useContext,
-  useState,
+  useReducer,
 } from "react";
 
 import i18next from "../../../i18n";
-import { LanguageTypes } from "../../utils/types";
+import { LanguageEnum } from "../../enum";
+import { reducerLanguage } from "../../reducers";
+import { LanguageReducerAction, LanguageReducerState } from "../../types";
 
-interface LanguagesProps {
-  lang: string;
-  setLang?: any;
-  setUpdate: any;
-}
-
-const initialvalues: LanguagesProps = {
-  lang: LanguageTypes.portuguese,
-  setLang: Function as any,
+const initialState: LanguageReducerState = {
+  lang: LanguageEnum.portuguese,
   setUpdate: Function as any,
 };
 
 const LanguagesContext = createContext({
-  ...initialvalues,
+  ...initialState,
 });
 
 export const LanguagesProvider: FC = ({ children }) => {
-  const [lang, setLang] = useState(initialvalues.lang);
+  const [state, dispact] = useReducer<
+    Reducer<LanguageReducerState, LanguageReducerAction>
+  >(reducerLanguage, initialState);
+
+  const { lang } = state;
 
   const setUpdate = useCallback(
     (language: string) => {
       i18next.changeLanguage(language);
-      setLang(language);
+      dispact({ type: "language_change", payload: language });
     },
-    [setLang]
+    [dispact]
   );
 
   return (
