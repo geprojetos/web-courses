@@ -1,16 +1,17 @@
-import React, { FC } from "react";
-import { TextEnum, ColorsEnum } from "../../../assets/enum";
-import { TextType } from "../../../assets/types";
+import React, { FC } from 'react';
+import { TextEnum, ColorsEnum } from '../../../assets/enum';
+import { TextType } from '../../../assets/types';
 
-import "./styles.scss";
+import './styles.scss';
 
 export interface TextProps {
   type: TextType;
   className?: string;
   color?: ColorsEnum;
+  htmlFor?: string;
 }
 
-const Text: FC<TextProps> = ({ type, className, color, children }) => {
+const Text: FC<TextProps> = ({ type, className, color, htmlFor, children }) => {
   return type === TextEnum.h1 ? (
     <h1 style={{ color }} className={`text-h1 ${className}`}>
       {children}
@@ -40,14 +41,17 @@ const Text: FC<TextProps> = ({ type, className, color, children }) => {
       {children}
     </p>
   ) : (
-    <label style={{ color }} className={`text-label ${className}`}>
+    <label
+      style={{ color }}
+      className={`text-label ${className}`}
+      htmlFor={htmlFor}>
       {children}
     </label>
   );
 };
 
 Text.defaultProps = {
-  className: "",
+  className: '',
 };
 
 export default Text;
