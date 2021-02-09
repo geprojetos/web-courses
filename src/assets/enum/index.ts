@@ -6,6 +6,8 @@ export enum ColorsEnum {
   GREEN2 = '#24ef7f',
   WHITE1 = '#fff',
   GRAY1 = '#F0F0F7',
+  GRAY2 = '#c1bccc',
+  GRAY3 = '#010101',
 }
 
 export enum LanguageEnum {

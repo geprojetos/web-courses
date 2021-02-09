@@ -1,10 +1,10 @@
 import React from 'react';
 import { mount } from 'enzyme';
 
-import Categories from './index';
+import AddCategories from './index';
 
-describe('[Page] Categories', () => {
-  const wrapper = mount(<Categories />);
+describe('[Page] AddCategories', () => {
+  const wrapper = mount(<AddCategories />);
 
   it('should renders component', () => {
     expect(wrapper.exists());

@@ -24,10 +24,13 @@
     "generate": "plop --plopfile internals/generators/index.js",
     "pre-deploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "icons": "node create-icons"
+    "icons": "node create-icons",
+    "check-types": "tsc",
+    "pre-commit": "npm run check-types"
   },
   "husky": {
     "hooks": {
+      "pre-commit": "npm run pre-commit",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
@@ -71,6 +74,7 @@
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.5",
     "fantasticon": "^1.0.13",
+    "flow-bin": "^0.144.0",
     "husky": "^4.3.0",
     "plop": "^2.7.4",
     "react-grid-system": "^7.1.1",

@@ -32,7 +32,7 @@ module.exports = {
       },
       {
         type: "add",
-        path: `../../src/routers/{{camelCase name}}/pages/{{properCase name}}/styles.scss`,
+        path: `../../src/routers/{{lowerCase router}}/pages/{{properCase name}}/styles.scss`,
         abortOnFail: true,
       },
       {

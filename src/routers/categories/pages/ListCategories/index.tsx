@@ -1,11 +1,13 @@
 import React, { FC } from 'react';
 import { Container } from 'react-grid-system';
+import { Link } from 'react-router-dom';
+import { ColorsEnum } from '../../../../assets/enum';
 import { t } from '../../../../i18n';
 import { Select, Text } from '../../../../shared/components';
 import { List } from '../../../../shared/templates';
 import './styles.scss';
 
-const Categories: FC = () => {
+const ListCategories: FC = () => {
   return (
     <List
       content={
@@ -17,6 +19,14 @@ const Categories: FC = () => {
                 {t('categories:availableCategories')}
               </Text>
               <Select options={[]} label={t('categories:matter')} />
+
+              <div className='categories-box'>
+                <div className='categories-name'>
+                  <Text type='p' color={ColorsEnum.GRAY3}>
+                    {t('categories:availableCategories')}
+                  </Text>
+                </div>
+              </div>
             </section>
           </Container>
         </section>
@@ -25,4 +35,4 @@ const Categories: FC = () => {
   );
 };
 
-export default Categories;
+export default ListCategories;
