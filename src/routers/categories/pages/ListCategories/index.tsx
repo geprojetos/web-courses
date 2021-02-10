@@ -3,7 +3,7 @@ import { Container } from 'react-grid-system';
 import { Link } from 'react-router-dom';
 import { ColorsEnum } from '../../../../assets/enum';
 import { t } from '../../../../i18n';
-import { Select, Text } from '../../../../shared/components';
+import { Button, Select, Text } from '../../../../shared/components';
 import { List } from '../../../../shared/templates';
 import './styles.scss';
 
@@ -18,6 +18,10 @@ const ListCategories: FC = () => {
               <Text className='categories-title' type='h1'>
                 {t('categories:availableCategories')}
               </Text>
+
+              <Button align='right' link='/categories/add'>
+                {t('categories:newCategorie')}
+              </Button>
               <Select options={[]} label={t('categories:matter')} />
 
               <div className='categories-box'>

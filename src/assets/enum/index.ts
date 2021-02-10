@@ -38,3 +38,9 @@ export enum GlobalReducerEnum {
   CHANGE_TOKEN = 'change_token',
   RESET_TOKEN = 'reset_token',
 }
+
+export enum AlignEnum {
+  LEFT = 'left',
+  CENTER = 'center',
+  RIGHT = 'right',
+}

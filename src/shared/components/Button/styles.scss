@@ -1,0 +1,38 @@
+@import '../../../styles/colors';
+
+.button {
+  background: $PURPLE1;
+  border: 1px solid $PURPLE1;
+  border-radius: 6px;
+  color: $WHITE1;
+  padding: 10px;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background: $PURPLE2;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+}
+
+.button-block {
+  width: 100%;
+}
+
+.button-left,
+.button-center,
+.button-right {
+  display: flex;
+}
+
+.button-left {
+  justify-content: flex-start;
+}
+
+.button-center {
+  justify-content: center;
+}
+
+.button-right {
+  justify-content: flex-end;
+}
