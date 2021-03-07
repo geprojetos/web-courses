@@ -1,4 +1,5 @@
 // import
+import Input from './Input';
 import Button from './Button';
 import ChangeLanguage from './ChangeLanguage';
 import Select from './Select';
@@ -10,6 +11,7 @@ import Text from "./Text";
 
 export {
   // exports
+  Input,
   Button,
   ChangeLanguage,
   Select,

@@ -8,6 +8,7 @@ export enum ColorsEnum {
   GRAY1 = '#F0F0F7',
   GRAY2 = '#c1bccc',
   GRAY3 = '#010101',
+  RED1 = '#E33D3D',
 }
 
 export enum LanguageEnum {
@@ -24,6 +25,7 @@ export enum TextEnum {
   h6 = 'h6',
   p = 'p',
   label = 'label',
+  small = 'small',
 }
 
 export enum SelectReducerEnum {

@@ -10,6 +10,7 @@ $FONT_SIZE_28: 2.8rem;
 $FONT_SIZE_24: 2.4rem;
 $FONT_SIZE_22: 2rem;
 $FONT_SIZE_16: 1.6rem;
+$FONT_SIZE_12: 1.2rem;
 
 // LINE HEIGHT
 $LINE_HEIGHT_48: 4.8rem;
@@ -59,5 +60,11 @@ $LINE_HEIGHT_19: 1.9rem;
 @mixin PARAGRAPH {
   font-weight: $FONT_WEIGHT_REGULAR;
   font-size: $FONT_SIZE_16;
+  line-height: $LINE_HEIGHT_24;
+}
+
+@mixin SMALL {
+  font-weight: $FONT_WEIGHT_REGULAR;
+  font-size: $FONT_SIZE_12;
   line-height: $LINE_HEIGHT_24;
 }

@@ -2,5 +2,7 @@
   "categories": "Categories",
   "matter": "Matéria",
   "availableCategories": "Categorias Disponíveis",
-  "newCategorie": "Nova Categoria"
+  "newCategorie": "Nova Categoria",
+  "addCategorie": "Cadastro de categoria",
+  "name": "Nome"
 }

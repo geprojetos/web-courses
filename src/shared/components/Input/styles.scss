@@ -1,0 +1,17 @@
+@import '../../../styles/colors';
+
+.input-group {
+  margin-bottom: 10px;
+}
+
+.input {
+  border: 1px solid $GRAY1;
+  border-radius: 0.5rem;
+  color: $GRAY3;
+  padding: 1rem;
+  margin: 0.1rem 0;
+}
+
+.input-error-message {
+  margin-bottom: 1rem;
+}

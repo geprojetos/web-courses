@@ -9,7 +9,8 @@
   transition: all 0.2s ease-in-out;
 
   &:hover {
-    background: $PURPLE2;
+    background: $PURPLE3;
+    border: 1px solid $PURPLE3;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
   }

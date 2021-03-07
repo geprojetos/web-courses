@@ -1,5 +1,5 @@
-@import "../../../styles/_colors";
-@import "../../../styles/typography";
+@import '../../../styles/_colors';
+@import '../../../styles/typography';
 
 .text-h1,
 .text-h2,
@@ -40,6 +40,20 @@
   @include PARAGRAPH;
 }
 
+.text-small {
+  @include SMALL;
+}
+
 .text-label {
   @include PARAGRAPH;
+}
+
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
 }

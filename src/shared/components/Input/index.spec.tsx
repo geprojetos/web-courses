@@ -1,10 +1,11 @@
 import React from 'react';
+
 import { mount } from 'enzyme';
 
-import List from './index';
+import Input from './index';
 
-describe('[Temaplate] List', () => {
-  const wrapper = mount(<List header={<></>} body={<></>} />);
+describe('[Component] Input', () => {
+  const wrapper = mount(<Input />);
 
   it('should renders component', () => {
     expect(wrapper.exists()).toBeTruthy();

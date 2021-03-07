@@ -4,7 +4,16 @@ type LanguageReducerType = 'language_change';
 
 type GlobalReducerType = 'change_token' | 'reset_token';
 
-export type TextType = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'label';
+export type TextType =
+  | 'h1'
+  | 'h2'
+  | 'h3'
+  | 'h4'
+  | 'h5'
+  | 'h6'
+  | 'p'
+  | 'label'
+  | 'small';
 
 export const screenObj = {
   xs: 'xs',

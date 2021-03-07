@@ -2,7 +2,6 @@ import React, { FC, memo, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { Text } from '..';
 import { AlignEnum } from '../../../assets/enum';
-
 import './styles.scss';
 
 export interface ButtonProps {
@@ -42,7 +41,7 @@ const Button: FC<ButtonProps> = memo(({ children, block, align, link }) => {
         <Text type='p'>{children}</Text>
       </button>
     );
-  }, [link]);
+  }, [link, buttonStyle, children]);
 
   return <div className={buttonAlign}>{buttonComponent}</div>;
 });

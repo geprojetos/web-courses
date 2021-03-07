@@ -1,17 +1,19 @@
-import React, { FC, ReactChild } from "react";
-import Header from "../../components/Header";
+import React, { FC, ReactChild } from 'react';
+import Header from '../../components/Header';
 
-import "./styles.scss";
+import './styles.scss';
 
 export interface ListProps {
-  content: ReactChild;
+  header: ReactChild;
+  body: ReactChild;
 }
 
-const List: FC<ListProps> = ({ content }) => {
+const List: FC<ListProps> = ({ header, body }) => {
   return (
-    <section>
+    <section className={`template-list`}>
       <Header />
-      <section className={`template-list`}>{content}</section>
+      <section className={'template-list-header'}>{header}</section>
+      <section className={'template-list-body'}>{body}</section>
     </section>
   );
 };
