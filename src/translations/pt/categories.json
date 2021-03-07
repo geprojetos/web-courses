@@ -4,5 +4,6 @@
   "availableCategories": "Categorias Disponíveis",
   "newCategorie": "Nova Categoria",
   "addCategorie": "Cadastro de categoria",
-  "name": "Nome"
+  "name": "Nome",
+  "nameRequired": "Nome obrigatório"
 }
