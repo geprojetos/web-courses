@@ -5,5 +5,7 @@
   "newCategorie": "New categorie",
   "addCategorie": "Add new categorie",
   "name": "Name",
-  "nameRequired": "Name is required"
+  "nameRequired": "Name is required",
+  "youDontHave": "You on't have any registered categories",
+  "filterByCategory": "Filter by category"
 }

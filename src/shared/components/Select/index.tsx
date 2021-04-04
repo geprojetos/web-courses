@@ -23,6 +23,7 @@ export interface SelectProps {
   className?: string;
   name?: string;
   id?: string;
+  onSelected?: (value: string) => void;
 }
 
 const initialState: SelectReducerState = { value: '' };
@@ -34,16 +35,21 @@ const Select: FC<SelectProps> = ({
   className,
   name,
   id,
+  onSelected,
 }) => {
   // hooks
   const [state, dispatch] = useReducer<
     Reducer<SelectReducerState, SelectReducerAction>
   >(reducerSelect, initialState);
 
-  const handleChange = useCallback((e: FormEvent) => {
-    const select: string = (e.target as any).value.trim().toLocaleLowerCase();
-    dispatch({ type: 'select_change', payload: select });
-  }, []);
+  const handleChange = useCallback(
+    (e: FormEvent) => {
+      const select: string = (e.target as any).value.trim().toLocaleLowerCase();
+      dispatch({ type: 'select_change', payload: select });
+      onSelected && onSelected(select);
+    },
+    [onSelected]
+  );
 
   return (
     <section className={className}>
@@ -60,14 +66,17 @@ const Select: FC<SelectProps> = ({
           value={state.value}
           onChange={handleChange}>
           <option>Selecione um valor</option>
-          {options.length &&
+          {options.length > 0 ? (
             options.map((item) => {
               return (
                 <option key={item.value} value={item.value}>
                   {item.label}
                 </option>
               );
-            })}
+            })
+          ) : (
+            <></>
+          )}
         </select>
       </div>
     </section>

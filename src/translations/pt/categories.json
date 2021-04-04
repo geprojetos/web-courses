@@ -5,5 +5,7 @@
   "newCategorie": "Nova Categoria",
   "addCategorie": "Cadastro de categoria",
   "name": "Nome",
-  "nameRequired": "Nome obrigatório"
+  "nameRequired": "Nome obrigatório",
+  "youDontHave": "Você não possui nenhuma categoria cadastrada",
+  "filterByCategory": "Filtrar por categoria"
 }
